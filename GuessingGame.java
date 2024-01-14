@@ -1,3 +1,16 @@
+/*
+Jamison Schmidt
+1/9/2024
+Lab 1 - Guessing Game
+
+An interactive guessing game.
+Each round, a random number is generated.
+The user tries to guess the number in as few tries as possible.
+The game will give hints based on whether the answer is higher or lower than the guessed number.
+When a game is completed, the user will be asked to play again.
+When the user no longer wants to play, all game statistics will be posted to the console.
+*/
+
 package Lab1_GuessingGame;
 
 import java.util.InputMismatchException;
@@ -22,7 +35,7 @@ public class GuessingGame {
 
         int rounds_played = 0;
         int total_guesses = 0;
-        int minimum_guesses = Integer.MAX_VALUE;
+        int minimum_guesses = Integer.MAX_VALUE;  // Greater than the 9,999 assummed max guesses by user
 
         do {
             // Play rounds with the user
